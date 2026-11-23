@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harshita Pullamsetty · GIS Portfolio</title>
 <meta name="description" content="SreeHarshita Pullamsetty, Geoinformatics student in Berlin. Interactive map of my GIS projects with QGIS and Python.">
@@ -20,9 +21,9 @@
    COLOUR OSM land #f2efe9, water #aad3df, purple borders; four project colours; white sidebar
    TYPE Sora 700 for headings + DM Sans for text and labels
    LAYOUT laptop: 380px sidebar left, map fills the rest; phone: map on top, sidebar content below */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#15181d);--ink:light-dark(#16191f,#eceef2);--mute:light-dark(#5d6473,#a3aab7);--line:light-dark(#e4e7ec,#2b313a);--soft:light-dark(#f5f6f8,#1c2027);--land:light-dark(#f2efe9,#2a2c30);--water:light-dark(#aad3df,#1b2b35);--bord:light-dark(#b9a3c9,#76638a);--lab:light-dark(#222222,#e6e6e6);--clab:light-dark(#7a5c8f,#c3a9d6);--halo:light-dark(#ffffff,#15181d);--c1:#e4553a;--c2:#2a6fdb;--c3:#0f9a73;--c4:#d39500;--c5:#8b5cf6;--sh:0 1px 2px rgba(16,24,40,.08),0 8px 24px -10px rgba(16,24,40,.3)}
+:root{color-scheme:light;--bg:light-dark(#ffffff,#15181d);--ink:light-dark(#16191f,#eceef2);--mute:light-dark(#5d6473,#a3aab7);--line:light-dark(#e4e7ec,#2b313a);--soft:light-dark(#f5f6f8,#1c2027);--land:light-dark(#f2efe9,#2a2c30);--water:light-dark(#aad3df,#1b2b35);--bord:light-dark(#b9a3c9,#76638a);--lab:light-dark(#222222,#e6e6e6);--clab:light-dark(#7a5c8f,#c3a9d6);--halo:light-dark(#ffffff,#15181d);--c1:#e4553a;--c2:#2a6fdb;--c3:#0f9a73;--c4:#d39500;--c5:#8b5cf6;--sh:0 1px 2px rgba(16,24,40,.08),0 8px 24px -10px rgba(16,24,40,.3)}
 :root[data-theme=light]{color-scheme:light}
-:root[data-theme=dark]{color-scheme:dark}
+:root[data-theme=dark]{color-scheme:light}
 *{box-sizing:border-box;min-width:0}
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "DM Sans",system-ui,sans-serif;overflow-x:clip}
@@ -89,8 +90,6 @@ button{font-family:inherit}
 .mail button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;min-height:34px;padding:0 12px;font-weight:700;cursor:pointer}
 .mapw{position:relative;background:var(--soft);overflow:hidden}
 #map{position:absolute;inset:0;font:inherit;background:var(--soft)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.92) contrast(.88)}}
-:root[data-theme=dark] .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.92) contrast(.88)}
 .leaflet-container a{color:var(--c2)}
 .leaflet-control-attribution{background:color-mix(in srgb,var(--bg) 85%,transparent)!important;color:var(--mute)!important;font-size:11px}
 .leaflet-control-scale-line{background:color-mix(in srgb,var(--bg) 80%,transparent);border-color:var(--ink);color:var(--ink)}
